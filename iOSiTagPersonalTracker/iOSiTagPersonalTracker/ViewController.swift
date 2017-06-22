@@ -59,7 +59,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
          * d = 10 ^ ((TxPower - RSSI) / (10 * n))
          */
         let result = pow(10.0, (txPower - rssi) / (10 * 4))
-        return NSDecimalNumber(decimal: result).doubleValue/100.0
+        return NSDecimalNumber(decimal: result).doubleValue/10.0
     }
 
 }
